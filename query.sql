@@ -36,6 +36,6 @@ ORDER BY `media_caricati` ASC;
 -- Ordina gli utenti per totale di likes ricevuti nei loro posts (25) 
 
 SELECT `user_id`, COUNT(*) AS `likes_ricevuti`
-FROM `likes`
+FROM `posts`
 GROUP BY `user_id`
 ORDER BY `likes_ricevuti` ASC;
