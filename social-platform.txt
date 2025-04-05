@@ -52,4 +52,4 @@ ON `likes`.`post_id` = `posts`.`id`
 INNER JOIN `users`
 ON `posts`.`user_id` = `users`.`id`
 GROUP BY `user_id`
-ORDER BY `likes_ricevuti`
+ORDER BY `likes_ricevuti`;
