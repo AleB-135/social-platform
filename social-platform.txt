@@ -1,6 +1,6 @@
 -- Seleziona gli utenti che hanno postato almeno un video
 
-SELECT `username`, `posts`.`title`, `posts`.`date`, `medias`.`type`
+SELECT `username`, `posts`.`title`, `posts`.`date`
 FROM `users`
 INNER JOIN `posts`
 ON `users`.`id` = `posts`.`id`
@@ -13,7 +13,7 @@ WHERE `medias`.`type` = 'video';
 
 -- Seleziona tutti i post senza Like (13)
 
-SELECT `title`, `posts`.`date`, `post_id`,`likes`.`user_id`
+SELECT `title`, `posts`.`date`
 FROM `posts`
 LEFT JOIN `likes`
 ON `posts`.`id` = `likes`.`post_id`
